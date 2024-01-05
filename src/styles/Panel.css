@@ -1,0 +1,52 @@
+@keyframes customAnimation {
+  0% {
+    box-shadow: 0 0 10px 5px #31a9ff;
+  }
+  20% {
+    box-shadow: 0 0 10px 5px #31a9ff;
+  }
+  33% {
+    box-shadow: 0 0 10px 5px #2eff2a;
+  }
+  53% {
+    box-shadow: 0 0 10px 5px #2eff2a;
+  }
+  66% {
+    box-shadow: 0 0 10px 5px #de40de;
+  }
+  86% {
+    box-shadow: 0 0 10px 5px #de40de;
+  }
+  100% {
+    box-shadow: 0 0 10px 5px #31a9ff;
+  }
+}
+
+.contenedor-de-premios{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    justify-self: flex-end;
+}
+
+.panel ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    list-style-type: none;
+    gap: 15px;
+    padding-left: 0%;
+    margin: 0;
+}
+  
+.casilla img {
+  width: 68px;
+  height: 70px;
+  filter: grayscale(100%);
+}
+
+.contenedor-de-premios p{
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}

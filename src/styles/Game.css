@@ -1,0 +1,145 @@
+.container1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    transition: visibility 0.5s ease-in-out;
+    background-color:black;
+    padding: 0 1rem 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.horizontal-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0;
+    margin-top: 2.5rem;
+}
+
+.itemContain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+    padding-left: 0;
+    width: 150px;
+    justify-self: center;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.itemContain img{
+    width: 150px;
+    height: 165px;
+    margin-right: 2.5rem;
+    margin-left: -3rem;
+}
+
+.itemContain .vertical-name{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.itemContain .name{
+    position: absolute;
+    opacity: 0;
+}
+
+.a-btn{
+	background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	display: inline-block;
+	font-size: 1.1rem;
+	width: 105px;
+	padding: .3rem 0 .1rem;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1rem;
+}
+.a-btn:focus, .a-btn:hover{
+	background: #BCBCBC;
+}
+.a-btn{
+	background: rgb(168, 16, 5);
+}
+.a-btn:focus, .a-btn:hover{
+	background: rgb(194, 13, 4);
+}
+
+@media (max-width: 1062px){
+    .juego-container{
+      max-width: 680px;
+    }
+
+    .horizontal-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 0 2rem 4rem;
+    }
+
+    .arcade-machine .container{
+        width: 50%;
+        padding-left: 2rem;
+    }
+
+    .contenedor-de-premios{
+        margin: 0 6rem;
+    }
+  }
+
+  @media (max-width: 754px){
+    .juego-container{
+        width: 95%;
+      }
+    .horizontal-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 0;
+
+    }
+    .itemContain{
+        margin: 0 5rem;
+        width: 240px;
+        height: 80px;
+        padding: 0;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+    .itemContain img{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 230px;
+        top: 15px;
+    }
+    .itemContain .vertical-name{
+        display: none;
+    }
+    .itemContain .name{
+        opacity: 1;
+        position: absolute;
+        left: 20px;
+    }
+  }
+
+  @media (max-width: 660px){
+    .juego-container{
+      width: 340px;
+    }
+    .a-btn{
+        font-size: 0px;
+        width: 50px;
+        height: 50px;
+    }
+  }

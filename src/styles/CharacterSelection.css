@@ -1,0 +1,25 @@
+.fondo{
+    background: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 4rem 4rem 7rem;
+  
+}
+
+.personajes{
+    display: flex;
+    justify-content: center;
+}
+
+.personajes img{
+    width: 150px;
+    padding: .8rem;
+    border: 3px solid #de40de;
+    margin: 4rem;
+}
+
+.personajes img:hover{
+    transform: scale(1.15);
+}
