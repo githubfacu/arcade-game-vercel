@@ -26,28 +26,29 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(10, 10, 10);
-    padding: 20px;
-    justify-self: flex-end;
+    padding: 15px;
+    justify-self: center;
+    margin-left: 1rem;
+    width: 55%;
 }
 
 .panel ul{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(3, 1fr);
     list-style-type: none;
-    gap: 15px;
+    gap: 5%;
     padding-left: 0%;
     margin: 0;
 }
   
 .casilla img {
-  width: 64px;
-  height: 66px;
+  width: 100%;
   filter: grayscale(100%);
 }
 
 .contenedor-de-premios p{
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: 1.05rem;
+  font-size: .94rem;
 }

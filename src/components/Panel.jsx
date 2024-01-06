@@ -126,7 +126,7 @@ const Panel = ({ premios, pause, indice, tirosRestantes }) => {
             </li>
           </ul>
         </div>
-        <p>Score: {score} to 9</p>      
+        <p>SC: {score} to 9</p>      
     </div>
   );
 };
