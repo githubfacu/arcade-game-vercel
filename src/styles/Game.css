@@ -74,10 +74,14 @@
 	background: rgb(194, 13, 4);
 }
 
+
 @media (max-width: 1062px){
     .juego-container{
-      max-width: 680px;
+      width: 92%;
     }
+    .juego-container .premio{
+        width: 7.75%;
+      }
 
     .horizontal-container{
         display: flex;
@@ -97,9 +101,7 @@
   }
 
   @media (max-width: 754px){
-    .juego-container{
-        width: 95%;
-      }
+
     .horizontal-container{
         display: flex;
         flex-wrap: wrap;
@@ -131,11 +133,8 @@
         position: absolute;
         left: 20px;
     }
-  }
-
-  @media (max-width: 660px){
-    .juego-container{
-      width: 340px;
+    .juego-container .premio{
+      width: 15%;
     }
     .a-btn{
         font-size: 0px;
@@ -144,5 +143,5 @@
     }
     .contenedor-de-premios p{
         font-size: .9rem;
-    }
+    } 
   }

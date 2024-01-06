@@ -41,13 +41,13 @@
 }
   
 .casilla img {
-  width: 68px;
-  height: 70px;
+  width: 64px;
+  height: 66px;
   filter: grayscale(100%);
 }
 
 .contenedor-de-premios p{
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: 1..5rem;
+  font-size: 1.05rem;
 }

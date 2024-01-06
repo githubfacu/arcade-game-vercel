@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 89%;
+  width: 87%;
   background-color: rgb(10, 10, 10); 
   padding-right: 10px;
   padding-bottom: 20px;
@@ -11,8 +11,7 @@
 }
 
 .premio {
-  width: 90px;
-  height: 90px;
+  width: 8.25%;
   margin-left: 20px;
   margin-right: 0px;
   margin-top: 20px;
@@ -29,18 +28,6 @@
 
 .carousel-unico .premio{
   margin: 0;
-  width: 78px;
-  height: 78px;
-}
-
-@media (max-width: 1176px){
-  .juego-container{
-    width: 95%;
-  }
-}
-
-@media (max-width: 1105px){
-  .juego-container{
-    width: 100%;
-  }
+  width: 77px;
+  height: 77px;
 }
