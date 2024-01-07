@@ -27,7 +27,10 @@
 
 @media (max-width: 754px){
     .fondo{
-        padding-top: 2rem;
+        padding-top: 1.5rem;
+    }
+    .fondo .select{
+        font-size: 1.1rem;
     }
     .personajes{
         flex-direction: column;

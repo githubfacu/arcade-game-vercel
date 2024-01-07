@@ -140,6 +140,10 @@
     }
     .juego-container{
         width: 95%;
+        padding-bottom: 2%;
+    }
+    .juego-container .premio{
+        margin-top: 2%;
     }
     .contenedor-de-premios{
         margin-right: 0;
