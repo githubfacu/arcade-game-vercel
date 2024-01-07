@@ -20,6 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --cursor-gamer: url('/Images/cursor-gamer.cur'), auto;
+  height: 100vh;
 }
 
 body {

@@ -76,12 +76,7 @@
 
 
 @media (max-width: 1062px){
-    .juego-container{
-      width: 92%;
-    }
-    .juego-container .premio{
-        width: 7.75%;
-      }
+
 
     .horizontal-container{
         display: flex;
@@ -124,19 +119,19 @@
     }
     .itemContain{
         margin: 0 5rem;
-        width: 240px;
-        height: 80px;
+        width: 210px;
+        height: 70px;
         padding: 0;
         justify-content: flex-start;
         margin-bottom: 2rem;
         position: relative;
     }
     .itemContain img{
-        width: 90px;
-        height: 90px;
+        width: 68px;
+        height: 70px;
         position: absolute;
-        left: 230px;
-        top: 15px;
+        left: 235px;
+        top: 13px;
     }
     .itemContain .vertical-name{
         display: none;
@@ -146,15 +141,10 @@
         position: absolute;
         left: 20px;
     }
-    .juego-container .premio{
-      min-width: 40px;
-    }
-    .a-btn{
-        font-size: 0px;
-        width: 50px;
-        height: 50px;
+    .juego-container{
+        width: 95%;
     }
     .contenedor-de-premios{
-        margin: 0 0 3rem 0;
+        margin-right: 0;
     } 
   }

@@ -2,7 +2,8 @@
     height: 400px;
     width: 400px;
     position: relative;
-    margin: 35px auto;
+    margin: 1rem;
+    margin-left: 0;
     perspective: 35em;
   }
   .arcade-machine .top {
