@@ -96,7 +96,11 @@ const StartScreen = ({ onEnterPress }) => {
         transition: 'visibility 0.5s ease-in-out',
       }}
     >
-      <img src="/Images/Binary Land 50.png" alt="logo" style={{ marginBottom: '.5rem', maxWidth: '50%'}}/>
+      <img src="/Images/Binary Land 50.png" alt="logo"
+      style={{ marginBottom: '.5rem',
+      maxWidth: '50%',
+      minWidth: '350px',
+      }}/>
       <h2 style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.4s ease-in-out' }}>
         Press Enter to continue
       </h2>

@@ -4,8 +4,8 @@
   width: 85%;
   background-color: rgb(10, 10, 10); 
   padding-right: 3%;
-  padding-bottom: 2%;
-  margin-top: 3rem;
+  padding-bottom: 1%;
+  margin-top: 2.5rem;
   transition: box-shadow .3s ease;
 }
 
@@ -13,7 +13,7 @@
   width: 8.5%;
   margin-left: 2.5%;
   margin-right: 0px;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .carousel-unico{

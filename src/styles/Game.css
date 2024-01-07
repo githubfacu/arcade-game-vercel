@@ -55,7 +55,7 @@
 	border-right: 6px inset rgba(255,255,255,.5);
 	border-top: 6px inset rgba(255,255,255,.5);
 	box-sizing: border-box;
-	color: white;
+	color: #d1d1d1;
 	display: inline-block;
 	font-size: 1.1rem;
 	width: 105px;
@@ -76,8 +76,6 @@
 
 
 @media (max-width: 1062px){
-
-
     .horizontal-container{
         display: flex;
         flex-wrap: wrap;
@@ -110,7 +108,6 @@
   }
 
   @media (max-width: 754px){
-
     .horizontal-container{
         display: flex;
         flex-wrap: wrap;
@@ -146,5 +143,10 @@
     }
     .contenedor-de-premios{
         margin-right: 0;
-    } 
+    }
+    .a-btn{
+        font-size: 0px;
+        width: 45px;
+        height: 45px;
+    }
   }
