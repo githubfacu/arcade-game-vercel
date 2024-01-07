@@ -45,7 +45,7 @@ const Game = () => {
       const timeoutId = setTimeout(() => {
         setShowGameContainer(false);
         setGameContainerUnmounted(true);
-        //sessionStorage.clear()
+        sessionStorage.clear()
       }, 3000);
     return () => clearTimeout(timeoutId);      
     }else{
@@ -75,12 +75,12 @@ const Game = () => {
     setVisiblePremioIndex(index);
   };
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   setTimeout(()=>{
-  //     playIsThisIt();
-  //   }, 3000)
-  // }, []);
+    setTimeout(()=>{
+      playIsThisIt();
+    }, 3000)
+  }, []);
 
   const asignarPremiosAlPanel = () => {
     const premiosAleatorios = [...premios];
