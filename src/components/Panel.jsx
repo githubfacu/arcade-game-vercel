@@ -12,7 +12,8 @@ const Panel = ({ premios, pause, indice, tirosRestantes }) => {
   const wrongAnswer = new Audio('/Audios/wrong-answer-buzz-950.mp3');
   const winnerSound = new Audio('/Audios/medieval-fanfare-6826.mp3');
   const endGameSound = new Audio('/Audios/end-6993.mp3');
-
+  const texto = [`SC: ${score} to 9`, 'Game Over']
+  const [indiceTexto, setIndiceTexto] = useState(0);
 
   const renderizarElemento = (index) => {
 
@@ -69,6 +70,14 @@ const Panel = ({ premios, pause, indice, tirosRestantes }) => {
     console.log(score);
   }, [itemsArr]);
 
+
+  const gameOverToggle = () => {
+    console.log('inicia intervalo')
+    const intervalId = setInterval(() => {
+      setIndiceTexto((prevIndice) => (prevIndice + 1) % texto.length);
+    }, 3000)
+  }
+
   useEffect(() => {
     if (tirosRestantes === 0){
       pauseIsThisIt()
@@ -79,12 +88,14 @@ const Panel = ({ premios, pause, indice, tirosRestantes }) => {
         },1500)
         setTimeout(() => {
           setAnimation({animation: 'customAnimation 3s ease infinite'})
+          gameOverToggle()
           playIsThisIt()
         },9000)
       } else{
         setTimeout(() => {
           endGameSound.play()
         },1500)
+        gameOverToggle()
         // setTimeout(() => {
         //   setAnimation({animation: 'customAnimation 3s ease infinite'})
         //   playIsThisIt()
@@ -126,7 +137,8 @@ const Panel = ({ premios, pause, indice, tirosRestantes }) => {
             </li>
           </ul>
         </div>
-        <p>SC: {score} to 9</p>      
+        <p>{texto[indiceTexto]}</p>
+        
     </div>
   );
 };
