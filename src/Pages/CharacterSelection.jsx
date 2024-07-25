@@ -7,7 +7,11 @@ const CharacterSelection = () => {
   const navigate = useNavigate();
   const { pauseIsThisIt } = useSound();
   const startAudio = new Audio('Audios/start.mp3');
-  const selectAudio = new Audio('/Audios/select.mp3');  
+  const selectAudio = new Audio('/Audios/select.mp3');
+
+  startAudio.volume = .2
+  selectAudio.volume = .2
+
 
   pauseIsThisIt();
 

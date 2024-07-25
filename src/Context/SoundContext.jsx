@@ -5,6 +5,7 @@ const SoundContext = createContext();
 export const SoundProvider = ({ children }) => {
 
   const audio = new Audio('/Audios/the-strokes-is-this-it-8-bit.mp3');
+  audio.volume = .2
 
   const playIsThisIt = () => {
     audio.currentTime = 0;

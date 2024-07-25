@@ -26,7 +26,9 @@ const Game = () => {
   const [neonSwitch, setNeonSwitch] = useState(false)
 
   const jostickAudio = new Audio('/Audios/half-switch-150130.mp3');
+  jostickAudio.volume = .2
   const lucesAudio = new Audio('/Audios/metallic-sci-fi-drop-888.wav');
+  lucesAudio.volume = .2
 
   const premios = [
     { id: 1, src: '/Images/premios/Binary_Land_Cake.png', hidden: false, name: 'Cake', verticalName: 'C\na\nk\ne', alt: 'Premio 1' },

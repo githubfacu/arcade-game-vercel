@@ -8,6 +8,7 @@ const StartScreen = ({ onEnterPress }) => {
   const navigate = useNavigate(); 
   const startScreenRef = useRef();
   const audio = new Audio('/Audios/init.mp3');
+  audio.volume = 0.2
 
   pauseIsThisIt();
 

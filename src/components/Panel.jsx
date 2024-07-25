@@ -8,10 +8,16 @@ const Panel = ({ premios, pause, indice, tirosRestantes }) => {
   const { playIsThisIt, pauseIsThisIt } = useSound();
   const [animation, setAnimation] = useState({boxShadow: '0 0 10px 5px white'})
   const items = premios
+
   const correctAnswer = new Audio('/Audios/bonus-alert-767.mp3');
+  correctAnswer.volume = .2
   const wrongAnswer = new Audio('/Audios/wrong-answer-buzz-950.mp3');
+  wrongAnswer.volume = .2
   const winnerSound = new Audio('/Audios/medieval-fanfare-6826.mp3');
+  winnerSound.volume = .2
   const endGameSound = new Audio('/Audios/end-6993.mp3');
+  endGameSound.volume = .2
+
   const texto = [`SC: ${score} to 9`, 'Game Over']
   const [indiceTexto, setIndiceTexto] = useState(0);
 
